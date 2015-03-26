@@ -2,7 +2,8 @@
 <html>
 <head>
 	<meta charset="utf-8">
-  	<title>Tatoo</title>
+  <link href='http://fonts.googleapis.com/css?family=Lobster' rel='stylesheet' type='text/css'>
+  	<title>Tattoo</title>
     <style type="text/css">
       body {
         position: relative;
@@ -18,6 +19,7 @@
       h1 {
         display: inline-block;
         font-size: 7vmin;
+        font-family: 'Lobster', cursive;
       }
       p {
         font-size: 3vmin;
@@ -62,23 +64,26 @@
           $("#bigimg1").slideToggle("slow");
           $(this).show();
           $('#bigimg2, #bigimg3').hide();
+          $('body').css('background','#d8d8d8');
         });
         $('.collection li:nth-child(2)').click(function(){ 
           $("#bigimg2").slideToggle("slow");
           $(this).show();
           $('#bigimg1, #bigimg3').hide();
+          $('body').css('background','#bbbbbb');
         });
         $('.collection li:nth-child(3)').click(function(){ 
           $("#bigimg3").slideToggle("slow");
           $(this).show();
           $('#bigimg1, #bigimg2').hide();
+          $('body').css('background','#a8a8a8');
         });
       });
     </script>
 </head>
 <body>
   <header>
-    <h1>Tatoo</h1>
+    <h1>Tattoo</h1>
   </header>
   <ul class="collection">
     <li>
