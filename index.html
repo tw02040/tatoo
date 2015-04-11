@@ -1,134 +1,105 @@
 ﻿<!DOCTYPE html>
 <html>
-<head>
-	<meta charset="utf-8">
-  <link href='http://fonts.googleapis.com/css?family=Lobster' rel='stylesheet' type='text/css'>
-  	<title>Tattoo</title>
-    <style type="text/css">
-      body {
-        position: relative;
-        margin: 0 auto;
-        padding: 0;
-        font-family: '맑은 고딕', 'Malgun Gothic', 'Gothic', 'sans-serif';
-        color: #333;
-        max-width: 800px;
-      }
-      header { 
-        text-align: center;
-      }
-      h1 {
-        display: inline-block;
-        font-size: 7vmin;
-        font-family: 'Lobster', cursive;
-      }
-      p {
-        font-size: 3vmin;
-      }
-      ul {
-        list-style-type: none;
-        margin: 0 auto;
-        padding: 0;
-        text-align: center;
-        display: inline-block;
-      }
-      .collection li {
-        float: left;
-        margin: 1em 1%;
-        padding: 0;
-        width: 31%;
-      }
-      .collection li img {
-        box-sizing: border-box;
-        width: 100%;
-      }
-      #bigimg1 li, #bigimg2 li, #bigimg3 li {
-        float: left;
-        padding: 0;
-        width: 100%;
-        margin: 0;
-      }
-      #bigimg1 li img, #bigimg2 li img, #bigimg3 li img {
-        box-sizing: border-box;
-        width: 96%;
-      }
-      #info {
-        position: fixed;
-        left: 2em;
-        top: 2em;
-        background-color: #000;
-        padding: 0.7em;
-        border-radius: 100%;
-      }
-      a {
-        text-decoration: none;
-        color: white;
-      }
-    </style>
-  	<script type="text/javascript" src="http://code.jquery.com/jquery-latest.min.js">
-  	</script>
-    <script type="text/javascript">
-      $(function(){ 
-        $('h1').click(function(){ 
-          alert("이 페이지는 안은수와 문가람의 타투샵 페이지 입니다");
-        });
-        $('#bigimg1, #bigimg2, #bigimg3').hide();
-        $('.collection li:nth-child(1)').click(function(){ 
-          $("#bigimg1").slideToggle("slow");
-          $(this).show();
-          $('#bigimg2, #bigimg3').hide();
-          $('body').css('background','#d8d8d8');
-        });
-        $('.collection li:nth-child(2)').click(function(){ 
-          $("#bigimg2").slideToggle("slow");
-          $(this).show();
-          $('#bigimg1, #bigimg3').hide();
-          $('body').css('background','#bbbbbb');
-        });
-        $('.collection li:nth-child(3)').click(function(){ 
-          $("#bigimg3").slideToggle("slow");
-          $(this).show();
-          $('#bigimg1, #bigimg2').hide();
-          $('body').css('background','#a8a8a8');
-        });
-      });
-    </script>
-</head>
-<body>
-  <a href="info.html"><div id="info">info</div></a>
-  <header>
-    <h1>Tattoo</h1>
-  </header>
-  <ul class="collection">
-    <li>
-      <img src="t01.jpg" alt="발목 레터링 타투 사진입니다">
-    </li>
-    <li>
-      <img src="t02.jpg" alt="손목 타투 사진입니다">
-    </li>
-    <li>
-      <img src="t03.jpg" alt="발목 타투 사진입니다">
-    </li>
-  </ul>
-  <ul id="bigimg1">
-    <li>
-      <img src="t01.jpg" alt="발목 레터링 타투 사진입니다">
-      <p>발목_흘림레터링</p>
-      <p>50000원</p>
-    </li>
-  </ul>
-  <ul id="bigimg2">
-    <li>
-      <img src="t02.jpg" alt="손목 타투 사진입니다">
-      <p>팔목_곡선다이아</p>
-      <p>40000원</p>
-    </li>
-  </ul>
-  <ul id="bigimg3">
-    <li>
-      <img src="t03.jpg" alt="발목 타투 사진입니다">
-      <p>발목_입체다이아</p>
-      <p>60000원</p>
-    </li>
-  </ul>
-</body>
+	<head>
+		<meta charset="utf-8">
+		<link href='http://fonts.googleapis.com/css?family=Lobster' rel='stylesheet' type='text/css'>
+		<title>tattoo</title>
+		<style type="text/css">
+			body {
+				position: relative;
+		        margin: 0 auto;
+		        padding: 0;
+		        font-family: ;
+		        max-width: 800px;
+			}
+			header { 
+		        text-align: center;
+		        font-family: 'Lobster', cursive;
+		        font-size: 3em;
+		    }
+			nav {
+				background: #000;
+		        margin: 0;
+		        font: 3vmin; Arial;
+		        padding: 1px;
+		        display: none;
+			}
+			nav h1 {
+				color: #fff;
+				padding: 0.1em 1.4em;
+				font-size: 5vmin;
+			}
+			nav ul {
+		        margin: 0 0 1.5em 0;
+		        font-size: 2.5vmin;
+		        list-style: none;
+		    }
+		    nav ul:last-of-type {
+		        margin: 0 0 3em 0;
+		    }
+		    nav ul li {
+		    	padding: 0.3em 0.01em;
+		    }
+		    nav ul:nth-of-type(1) li:nth-of-type(1) a, nav ul:nth-of-type(1) li:nth-of-type(5) a {
+		    	color: #fff;
+		    }
+		    nav ul li a{
+		    	color: #777;
+		    }
+		    nav ul li a {
+		    	text-decoration: none;
+		    }
+		    #nav_icon{
+		    	/*position: fixed;
+		    	top: 20px;
+		    	right: 20px;*/
+		    	margin: 2em;
+		    	width: 3em;
+		    	height: 3em;
+		    }
+		</style>
+		<script type="text/javascript" src="http://code.jquery.com/jquery-latest.min.js">
+	  	</script>
+	    <script type="text/javascript">
+	    	$(document).ready(function(){
+	    		$('#nav_icon').click(function(){ 
+		        	$("nav").slideToggle("slow");
+		        });
+			});
+	    </script>
+	</head>
+	<body>
+		<nav>
+			<h1><!--우리 쇼핑몰 이름 부분-->tattoo</h1>
+			<ul>
+	            <li><a href="#">Ahn Dohui</a></li>
+	            <li><a href="#">Profile</a></li>
+	            <li><a href="#">Design</a></li>
+	            <li><a href="#">Booking Schedule</a></li>
+	            <li><a href="#">Song hanbin</a></li>
+	            <li><a href="#">Profile</a></li>
+	            <li><a href="#">Design</a></li>
+	            <li><a href="#">Booking Schedule</a></li>
+	        </ul>   
+	        <ul> 
+	            <li><a href="#">Sticker</a></li>
+	            <li><a href="#">Enent</a></li>
+	            <li><a href="#">Contact</a></li>
+	            <li><a href="#">Infographics</a></li>
+	        </ul>
+		</nav>
+		<svg  id="nav_icon" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" width="85.04px" height="85.04px" viewBox="0 0 85.04 85.04" enable-background="new 0 0 85.04 85.04" xml:space="preserve">
+			<g id="menu_x5F_icon">
+				<rect width="85.04" height="85.04"/>
+			</g>
+			<g id="menu_x5F_icon_x5F_bar">
+				<rect x="20.498" y="23.79" fill="#FFFFFF" width="44.043" height="3.62"/>
+				<rect x="20.498" y="40.71" fill="#FFFFFF" width="44.043" height="3.62"/>
+				<rect x="20.498" y="57.934" fill="#FFFFFF" width="44.043" height="3.62"/>
+			</g>
+		</svg>
+		<header>
+			<h1>tattoo</h1><!--우리 쇼핑몰 로고/이름 부분-->
+		</header>
+	</body>
 </html>
