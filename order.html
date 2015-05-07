@@ -1,105 +1,250 @@
-﻿<!DOCTYPE html>
+<!DOCTYPE html>
 <html>
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="initial-scale=1,width=device-width"/>
-  <title>arttoo survey</title>
-  <style type="text/css">
-  @import url(http://fonts.googleapis.com/earlyaccess/nanumgothic.css);
-  	body {
-  		width: 100%;
-  		font-family: 'Nanum Gothic', sans-serif;
-  		line-height: 4vmin;
-  	}
-  	.required-message {
-  		visibility: hidden;
-  	}
-  	.ss-q-title {
-  		font-size: 3vmin;
-  		font-weight: bold;
-  	}
-  	li {
-  		list-style: none;
-  	}
-  	.ss-q-helpss-secondary-text {
-  		font-size: 2vmin;
-  		color: #999;
-  	}
-  	.ss-choice-label {
-  		font-size: 2.5vmin;
-  	}
-  	.ss-choice-item {
-  		margin-left: -40px;
-  	}
+  <link href='http://fonts.googleapis.com/css?family=Lobster' rel='stylesheet' type='text/css'>
+    <link href='http://fonts.googleapis.com/css?family=Khand:400,600,700' rel='stylesheet' type='text/css'>
+  <title>주문서</title>
+
+  <style>
+  * { 
+  	box-sizing:border-box;
+  }
+  body {
+  	background-color: black;
+  }
+  .all {
+  	width:80%;
+  	text-align: center;
+	margin-left: auto;
+    margin-right: auto;
+    border-radius: 18%;
+    background-color: white;
+    padding-left: 5%;
+    padding-right: 5%;
+  }
+  .ss-choices {
+ 	padding: 0;
+ 	margin: 0;
+  }
+  .ss-choice-item {
+  	list-style-type: none;
+  	font-size: 12px;
+    display: inline;
+    padding-right: 1%;
+    padding-left: 1%;
+  }
+  h1 {
+  	font-size: 3em;
+  	line-height: 2em;
+  	font-family: 'Lobster', cursive;
+  }
+  .que {
+  	font-family: 
+  }
+  .ss-form-question {
+  	margin-bottom: 4em;
+  	font-family: 'Dotum',sans-serif;
+  }
+  .ss-q-title {
+  	font-size: 17px;
+  	font-weight: bold;
+  	margin-bottom: 7px;
+  }
+  .ss-q-help {
+  	font-size: 11px;
+  	margin-bottom: 7px;
+    color:#737373;
+  }
+  #ss-submit {
+    margin: 0, auto;
+  }
+  nav {
+        font-family: 'Khand', sans-serif;
+        background: #000;
+            margin: 0;
+            font: 4vmin; Arial;
+            padding: 1px;
+            display: none;
+      }
+      nav h1 {
+        color: #fff;
+        margin: 40px 0 10px 40px;
+        font-size: 5vmin;
+        font-family: 'Lobster', cursive;
+      }
+      nav ul {
+            margin: 0 0 40px 0;
+            font-size: 3.5vmin;
+            list-style: none;
+        }
+        nav ul:first-of-type {
+            margin: 0 0 2em 0;
+        }
+        nav ul li {
+          padding: 3px 0px;
+        }
+        nav ul:nth-of-type(1) li:nth-of-type(1) a, nav ul:nth-of-type(1) li:nth-of-type(4) a {
+          color: #fff;
+        }
+        nav ul li a{
+          color: #777;
+        }
+        nav ul li a {
+          text-decoration: none;
+        }
+        #nav_icon{
+          /*position: fixed;
+          top: 20px;
+          right: 20px;*/
+          margin: 2em;
+          width: 3em;
+          height: 3em;
+        }
   </style>
+  <script type="text/javascript" src="http://code.jquery.com/jquery-latest.min.js">
+      </script>
+      <script type="text/javascript">
+        $(document).ready(function(){
+          $('#nav_icon').click(function(){ 
+              $("nav").slideToggle("slow");
+            });
+      });
+      </script>
 </head>
 <body>
 
-  
+  <nav>
+      <h1><!--우리 쇼핑몰 이름 부분-->arttoo</h1>
+      <ul>
+              <li><a href="#">Ahn Dohui</a></li>
+              <li><a href="profile_ahndohui.html">Profile</a></li>
+              <li><a href="#">Design</a></li>
+              <li><a href="#">Song hanbin</a></li>
+              <li><a href="profile_songhanbin.html">Profile</a></li>
+              <li><a href="#">Design</a></li>
+          </ul>   
+          <ul> 
+              <li><a href="#">Sticker</a></li>
+              <li><a href="discount.html">Event</a></li>
+              <li><a href="#">Contact</a></li>
+              <li><a href="order.html">order</a></li>
+              <li><a href="info.html">Infographics</a></li>
+          </ul>
+    </nav>
+    <svg  id="nav_icon" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" width="85.04px" height="85.04px" viewBox="0 0 85.04 85.04" enable-background="new 0 0 85.04 85.04" xml:space="preserve">
+      <g id="menu_x5F_icon">
+        <rect width="85.04" height="85.04"/>
+      </g>
+      <g id="menu_x5F_icon_x5F_bar">
+        <rect x="20.498" y="23.79" fill="#FFFFFF" width="44.043" height="3.62"/>
+        <rect x="20.498" y="40.71" fill="#FFFFFF" width="44.043" height="3.62"/>
+        <rect x="20.498" y="57.934" fill="#FFFFFF" width="44.043" height="3.62"/>
+      </g>
+    </svg>
+<div class="all">
+
+	<h1>Arttoo</h1>
 
 <script type="text/javascript">var submitted=false;</script>
 <iframe name="hidden_iframe" id="hidden_iframe"
 style="display:none;" onload="if(submitted)
-{window.location='thanks.html';}"></iframe>
+{window.location='thank.html';}"></iframe>
 <form action="https://docs.google.com/forms/d/1mpE6CGUV0bPJ03GoBN_485xwz9Lc_6tq6Xb1RXqEJcE/formResponse" method="post"
 target="hidden_iframe" onsubmit="submitted=true;">
   
+
+
+<div class="que">
+
   <ol role="list" class="ss-question-list" style="padding-left: 0">
+
+
+
+
 <div class="ss-form-question errorbox-good" role="listitem">
 <div dir="ltr" class="ss-item ss-item-required ss-text"><div class="ss-form-entry">
 <label class="ss-q-item-label" for="entry_1915480779"><div class="ss-q-title">이름
 <label for="itemView.getDomIdToLabel()" aria-label="(필수 입력란)"></label>
-<span class="ss-required-asterisk" aria-hidden="true">*</span></div>
-<div class="ss-q-helpss-secondary-text" dir="ltr">신청하시는 분의 이름을 적어주세요</div></label>
+</div>
+<div class="ss-q-help ss-secondary-text" dir="ltr">신청하시는 분의 이름을 적어주세요</div></label>
 <input type="text" name="entry.1915480779" value="" class="ss-q-short" id="entry_1915480779" dir="auto" aria-label="이름 신청하시는 분의 이름을 적어주세요 " aria-required="true" required="" title="">
 <div class="error-message" id="1843838299_errorMessage"></div>
-<div class="required-message">필수 질문입니다.</div>
-</div></div></div> <div class="ss-form-question errorbox-good" role="listitem">
+</div></div></div> 
+
+
+
+<div class="ss-form-question errorbox-good" role="listitem">
 <div dir="ltr" class="ss-item ss-item-required ss-text"><div class="ss-form-entry">
 <label class="ss-q-item-label" for="entry_949014629"><div class="ss-q-title">연락처
 <label for="itemView.getDomIdToLabel()" aria-label="(필수 입력란)"></label>
-<span class="ss-required-asterisk" aria-hidden="true">*</span></div>
-<div class="ss-q-helpss-secondary-text" dir="ltr">신청하시는 분의 연락처를 남겨주세요</div></label>
+</div>
+<div class="ss-q-help ss-secondary-text" dir="ltr">신청하시는 분의 연락처를 남겨주세요</div></label>
 <input type="text" name="entry.949014629" value="" class="ss-q-short" id="entry_949014629" dir="auto" aria-label="연락처 신청하시는 분의 연락처를 남겨주세요 " aria-required="true" required="" title="">
 <div class="error-message" id="1649786043_errorMessage"></div>
-<div class="required-message">필수 질문입니다.</div>
-</div></div></div> <div class="ss-form-question errorbox-good" role="listitem">
+</div></div></div> 
+
+
+
+
+<div class="ss-form-question errorbox-good" role="listitem">
 <div dir="ltr" class="ss-item ss-item-required ss-text"><div class="ss-form-entry">
 <label class="ss-q-item-label" for="entry_1807109149"><div class="ss-q-title">이메일주소
 <label for="itemView.getDomIdToLabel()" aria-label="(필수 입력란)"></label>
-<span class="ss-required-asterisk" aria-hidden="true">*</span></div>
-<div class="ss-q-helpss-secondary-text" dir="ltr">신청하시는 분의 이메일 주소를 남겨주세요</div></label>
+</div>
+<div class="ss-q-help ss-secondary-text" dir="ltr">신청하시는 분의 이메일 주소를 남겨주세요</div></label>
 <input type="text" name="entry.1807109149" value="" class="ss-q-short" id="entry_1807109149" dir="auto" aria-label="이메일주소 신청하시는 분의 이메일 주소를 남겨주세요 " aria-required="true" required="" title="">
 <div class="error-message" id="701385992_errorMessage"></div>
-<div class="required-message">필수 질문입니다.</div>
-</div></div></div> <div class="ss-form-question errorbox-good" role="listitem">
+</div></div></div> 
+
+
+
+
+
+<div class="ss-form-question errorbox-good" role="listitem">
 <div dir="ltr" class="ss-item ss-item-required ss-radio"><div class="ss-form-entry">
 <label class="ss-q-item-label" for="entry_544283647"><div class="ss-q-title">성별
 <label for="itemView.getDomIdToLabel()" aria-label="(필수 입력란)"></label>
-<span class="ss-required-asterisk" aria-hidden="true">*</span></div>
-<div class="ss-q-helpss-secondary-text" dir="ltr">신청하시는 분의 성별을 선택해주세요</div></label>
+</div>
+<div class="ss-q-help ss-secondary-text" dir="ltr">신청하시는 분의 성별을 선택해주세요</div></label>
+<ul class="ss-choices" role="radiogroup" aria-label="성별 신청하시는 분의 성별을 선택해주세요 ">
 
-<ul class="ss-choices" role="radiogroup" aria-label="성별 신청하시는 분의 성별을 선택해주세요 "><li class="ss-choice-item"><label><span class="ss-choice-item-control goog-inline-block"><input type="radio" name="entry.1489090268" value="&#45224;" id="group_1489090268_1" role="radio" class="ss-q-radio" aria-label="&#45224;" required="" aria-required="true"></span>
+	<li class="ss-choice-item"><label><span class="ss-choice-item-control goog-inline-block"><input type="radio" name="entry.1489090268" value="&#45224;" id="group_1489090268_1" role="radio" class="ss-q-radio" aria-label="&#45224;" required="" aria-required="true"></span>
 <span class="ss-choice-label">남</span>
 </label></li> <li class="ss-choice-item"><label><span class="ss-choice-item-control goog-inline-block"><input type="radio" name="entry.1489090268" value="&#50668;" id="group_1489090268_2" role="radio" class="ss-q-radio" aria-label="&#50668;" required="" aria-required="true"></span>
 <span class="ss-choice-label">여</span>
 </label></li></ul>
+
 <div class="error-message" id="544283647_errorMessage"></div>
-<div class="required-message">필수 질문입니다.</div></div></div></div> <div class="ss-form-question errorbox-good" role="listitem">
+</div></div></div>
+
+
+
+
+
+
+ <div class="ss-form-question errorbox-good" role="listitem">
 <div dir="ltr" class="ss-item ss-item-required ss-text"><div class="ss-form-entry">
 <label class="ss-q-item-label" for="entry_1119415053"><div class="ss-q-title">나이
 <label for="itemView.getDomIdToLabel()" aria-label="(필수 입력란)"></label>
-<span class="ss-required-asterisk" aria-hidden="true">*</span></div>
-<div class="ss-q-helpss-secondary-text" dir="ltr">신청하시는 분의 나이를 적어주세요</div></label>
+</div>
+<div class="ss-q-help ss-secondary-text" dir="ltr">신청하시는 분의 나이를 적어주세요</div></label>
 <input type="text" name="entry.1119415053" value="" class="ss-q-short" id="entry_1119415053" dir="auto" aria-label="나이 신청하시는 분의 나이를 적어주세요 " aria-required="true" required="" title="">
 <div class="error-message" id="51404164_errorMessage"></div>
-<div class="required-message">필수 질문입니다.</div>
-</div></div></div> <div class="ss-form-question errorbox-good" role="listitem">
+
+</div></div></div>
+
+
+
+
+
+ <div class="ss-form-question errorbox-good" role="listitem">
 <div dir="ltr" class="ss-item ss-item-required ss-radio"><div class="ss-form-entry">
 <label class="ss-q-item-label" for="entry_1525529891"><div class="ss-q-title">원하는 타투이스트 명
 <label for="itemView.getDomIdToLabel()" aria-label="(필수 입력란)"></label>
-<span class="ss-required-asterisk" aria-hidden="true">*</span></div>
-<div class="ss-q-helpss-secondary-text" dir="ltr">시술을 원하는 타투이스트 이름을 선택해주세요</div></label>
+</div>
+<div class="ss-q-help ss-secondary-text" dir="ltr">시술을 원하는 타투이스트 이름을 선택해주세요</div></label>
 
 <ul class="ss-choices" role="radiogroup" aria-label="원하는 타투이스트 명 시술을 원하는 타투이스트 이름을 선택해주세요 "><li class="ss-choice-item"><label><span class="ss-choice-item-control goog-inline-block"><input type="radio" name="entry.463924067" value="&#50504;&#46020;&#55148;" id="group_463924067_1" role="radio" class="ss-q-radio" aria-label="&#50504;&#46020;&#55148;" required="" aria-required="true"></span>
 <span class="ss-choice-label">안도희</span>
@@ -107,20 +252,37 @@ target="hidden_iframe" onsubmit="submitted=true;">
 <span class="ss-choice-label">송한빈</span>
 </label></li></ul>
 <div class="error-message" id="1525529891_errorMessage"></div>
-<div class="required-message">필수 질문입니다.</div></div></div></div> <div class="ss-form-question errorbox-good" role="listitem">
+</div></div></div> 
+
+
+
+
+
+
+
+<div class="ss-form-question errorbox-good" role="listitem">
 <div dir="ltr" class="ss-item ss-item-required ss-paragraph-text"><div class="ss-form-entry">
 <label class="ss-q-item-label" for="entry_782734690"><div class="ss-q-title">원하는 도안 명
 <label for="itemView.getDomIdToLabel()" aria-label="(필수 입력란)"></label>
-<span class="ss-required-asterisk" aria-hidden="true">*</span></div>
-<div class="ss-q-helpss-secondary-text" dir="ltr">디자인 페이지에 있는 도안으로 시술상담 원하신다면 도안의 이름을 적어주세요.<br/> 만약 신청하시는 분이 직접 그린 나만의 도안으로 시술 받고 싶으시다면<br/> &#39;나만의 도안&#39;이라고 적어주시면 상세한 상담 해드리겠습니다.</div></label>
+</div>
+<div class="ss-q-help ss-secondary-text" dir="ltr">디자인 페이지에 있는 도안으로 시술상담 원하신다면 도안의 이름을 적어주세요. 만약 신청하시는 분이 직접 그린 나만의 도안으로 시술 받고 싶으시다면 &#39;나만의 도안&#39;이라고 적어주시면 상세한 상담 해드리겠습니다.</div></label>
 <textarea name="entry.782734690" rows="8" cols="0" class="ss-q-long" id="entry_782734690" dir="auto" aria-label="원하는 도안 명 디자인 페이지에 있는 도안으로 시술상담 원하신다면 도안의 이름을 적어주세요. 만약 신청하시는 분이 직접 그린 나만의 도안으로 시술 받고 싶으시다면 &#39;나만의 도안&#39;이라고 적어주시면 상세한 상담 해드리겠습니다. " aria-required="true" required=""></textarea>
 <div class="error-message" id="1796377236_errorMessage"></div>
-<div class="required-message">필수 질문입니다.</div>
-</div></div></div> <div class="ss-form-question errorbox-good" role="listitem">
+
+</div></div></div> 
+
+
+
+
+
+
+
+
+<div class="ss-form-question errorbox-good" role="listitem">
 <div dir="ltr" class="ss-item  ss-paragraph-text"><div class="ss-form-entry">
-<label class="ss-q-item-label" for="entry_1334796413"><div class="ss-q-title">기타 문의 사항
+<label class="ss-q-item-label" for="entry_1334796413"><div class="ss-q-title2">기타 문의 사항
 </div>
-<div class="ss-q-helpss-secondary-text" dir="ltr">문의 하시고 싶은 점이 있으시다면 이곳에 적어주세요.</div></label>
+<div class="ss-q-help ss-secondary-text" dir="ltr">문의 하시고 싶은 점이 있으시다면 이곳에 적어주세요.</div></label>
 <textarea name="entry.1334796413" rows="8" cols="0" class="ss-q-long" id="entry_1334796413" dir="auto" aria-label="기타 문의 사항 문의 하시고 싶은 점이 있으시다면 이곳에 적어주세요. "></textarea>
 <div class="error-message" id="1434819260_errorMessage"></div>
 </div></div></div>
@@ -132,10 +294,14 @@ target="hidden_iframe" onsubmit="submitted=true;">
 <input type="hidden" name="fbzx" value="4401169404295594986">
 
 <div class="ss-item ss-navigate"><table id="navigation-table"><tbody><tr><td class="ss-form-entry goog-inline-block" id="navigation-buttons" dir="ltr">
+
 <input type="submit" name="submit" value="&#48372;&#45236;&#44592;" id="ss-submit" class="jfk-button jfk-button-action ">
 </td>
 </tr></tbody></table></div></ol></form>
+
+</que>
   
+  </div>
   
   
   </body>

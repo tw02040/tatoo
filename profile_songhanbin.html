@@ -4,6 +4,9 @@
 <head>
 
 	<meta charset="utf-8">
+	<link href='http://fonts.googleapis.com/css?family=Lobster' rel='stylesheet' type='text/css'>
+		<link href='http://fonts.googleapis.com/css?family=Khand:400,600,700' rel='stylesheet' type='text/css'>
+
 	<title>pofile</title>
 
 	<style>
@@ -30,11 +33,11 @@
 
 
 
-	ul {
+	.profile ul {
 		padding:0;
 	}
 
-	 ul>li {
+	.profile ul>li {
 	 	list-style-type: none;
 	 	font-family: 'Jeju Gothic', serif;
 	 	font-size: 11px;
@@ -63,12 +66,89 @@
 	 	width: 100%;
 
 	 }
-
+	 nav {
+				font-family: 'Khand', sans-serif;
+				background: #000;
+		        margin: 0;
+		        font: 4vmin; Arial;
+		        padding: 1px;
+		        display: none;
+			}
+			nav h1 {
+				color: #fff;
+				margin: 40px 0 10px 40px;
+				font-size: 5vmin;
+				font-family: 'Lobster', cursive;
+			}
+			nav ul {
+		        margin: 0 0 40px 0;
+		        font-size: 3.5vmin;
+		        list-style: none;
+		    }
+		    nav ul:first-of-type {
+		        margin: 0 0 2em 0;
+		    }
+		    nav ul li {
+		    	padding: 3px 0px;
+		    }
+		    nav ul:nth-of-type(1) li:nth-of-type(1) a, nav ul:nth-of-type(1) li:nth-of-type(4) a {
+		    	color: #fff;
+		    }
+		    nav ul li a{
+		    	color: #777;
+		    }
+		    nav ul li a {
+		    	text-decoration: none;
+		    }
+		    #nav_icon{
+		    	/*position: fixed;
+		    	top: 20px;
+		    	right: 20px;*/
+		    	margin: 2em;
+		    	width: 3em;
+		    	height: 3em;
+		    }
 	</style>
+	<script type="text/javascript" src="http://code.jquery.com/jquery-latest.min.js">
+	  	</script>
+	    <script type="text/javascript">
+	    	$(document).ready(function(){
+	    		$('#nav_icon').click(function(){ 
+		        	$("nav").slideToggle("slow");
+		        });
+			});
+	    </script>
 </head>
 
 <body>
-
+	<nav>
+			<h1><!--우리 쇼핑몰 이름 부분-->arttoo</h1>
+			<ul>
+	            <li><a href="#">Ahn Dohui</a></li>
+	            <li><a href="profile_ahndohui.html">Profile</a></li>
+	            <li><a href="#">Design</a></li>
+	            <li><a href="#">Song hanbin</a></li>
+	            <li><a href="profile_songhanbin.html">Profile</a></li>
+	            <li><a href="#">Design</a></li>
+	        </ul>   
+	        <ul> 
+	            <li><a href="#">Sticker</a></li>
+	            <li><a href="discount.html">Event</a></li>
+	            <li><a href="#">Contact</a></li>
+	            <li><a href="order.html">order</a></li>
+	            <li><a href="info.html">Infographics</a></li>
+	        </ul>
+		</nav>
+		<svg  id="nav_icon" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" width="85.04px" height="85.04px" viewBox="0 0 85.04 85.04" enable-background="new 0 0 85.04 85.04" xml:space="preserve">
+			<g id="menu_x5F_icon">
+				<rect width="85.04" height="85.04"/>
+			</g>
+			<g id="menu_x5F_icon_x5F_bar">
+				<rect x="20.498" y="23.79" fill="#FFFFFF" width="44.043" height="3.62"/>
+				<rect x="20.498" y="40.71" fill="#FFFFFF" width="44.043" height="3.62"/>
+				<rect x="20.498" y="57.934" fill="#FFFFFF" width="44.043" height="3.62"/>
+			</g>
+		</svg>
 	<div class="container">
 			<img id="pattern1" src='https://github.com/moongaram/moongaram.github.io/blob/master/pattern1.jpg?raw=true'>
 			<img id="pattern2" src='https://github.com/moongaram/moongaram.github.io/blob/master/pattern2.jpg?raw=true'>
