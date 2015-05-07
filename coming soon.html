@@ -3,48 +3,107 @@
 	<head>
 		<title>coming soon</title>
         <meta name="viewport" content="initial-scale=1,width=device-width"/>
+        <link href='http://fonts.googleapis.com/css?family=Khand:400,600,700' rel='stylesheet' type='text/css'>
 		<style type="text/css">
-		div {
-    width: 100px;
-    height: 100px;
+        #all {
+            text-align: center;
+            width: 100%;
+        }
+		#movet {
+    width: 4em;
+    height: 4em;
     background-color: black;
     position: relative;
     /* Chrome, Safari, Opera */
-    -webkit-animation-name: example;
+    -webkit-animation-name: moveTop;
     -webkit-animation-duration: 5s;
     -webkit-animation-timing-function: linear;
     -webkit-animation-delay: 2s;
     -webkit-animation-iteration-count: infinite;
     /* Standard syntax */
-    animation-name: example;
+    animation-name: moveTop;
     animation-duration: 5s;
     animation-timing-function: linear;
     animation-delay: 2s;
     animation-iteration-count: infinite;
     animation-direction: alternate;
 }
-
+    #moved {
+    width: 4em;
+    height: 4em;
+    background-color: black;
+    position: relative;
+    left:85%; 
+    top:450px;
+    /* Chrome, Safari, Opera */
+    -webkit-animation-name: moveDown;
+    -webkit-animation-duration: 5s;
+    -webkit-animation-timing-function: linear;
+    -webkit-animation-delay: 2s;
+    -webkit-animation-iteration-count: infinite;
+    /* Standard syntax */
+    animation-name: moveDown;
+    animation-duration: 5s;
+    animation-timing-function: linear;
+    animation-delay: 2s;
+    animation-iteration-count: infinite;
+    animation-direction: alternate;
+}
+    p {
+        font-family: 'Khand', sans-serif;
+        color: white;
+        position: relative;
+    }
+    #when {
+        margin-top: 92px;
+    }
+    #what {
+        margin-top: 30px;
+    }
 /* Chrome, Safari, Opera */
-@-webkit-keyframes example {
+@-webkit-keyframes moveTop {
     0%   {background-color:black; left:0px; top:0px;}
-    25%  {background-color:white; left:30em; top:0px;}
-    50%  {background-color:black; left:30em; top:200px;}
+    25%  {background-color:white; left:85%; top:0px;}
+    50%  {background-color:black; left:85%; top:200px;}
     75%  {background-color:white; left:0px; top:200px;}
     100% {background-color:black; left:0px; top:0px;}
 }
 
 /* Standard syntax */
-@keyframes example {
+@keyframes moveTop {
     0%   {background-color:black; left:0px; top:0px;}
-    25%  {background-color:white; left:300px; top:0px;}
-    50%  {background-color:black; left:300px; top:200px;}
+    25%  {background-color:white; left:85%; top:0px;}
+    50%  {background-color:black; left:85%; top:200px;}
     75%  {background-color:white; left:0px; top:200px;}
     100% {background-color:black; left:0px; top:0px;}
+}
+@-webkit-keyframes moveDown {
+    0%   {background-color:black; left:85%; top:450px;}
+    25%  {background-color:white; left:0px; top:450px;}
+    50%  {background-color:black; left:0px; top:200px;}
+    75%  {background-color:white; left:85%; top:200px;}
+    100% {background-color:black; left:85%; top:450px;}
+}
+
+/* Standard syntax */
+@keyframes moveDown {
+    0%   {background-color:black; left:85%; top:450px;}
+    25%  {background-color:white; left:0px; top:450px;}
+    50%  {background-color:black; left:0px; top:200px;}
+    75%  {background-color:white; left:85%; top:200px;}
+    100% {background-color:black; left:85%; top:450px;}
 }
 		</style>
 	</head>
 	<body>
-		<div id="all">
+        <div id="all">
+        <div id="movet">
 		</div>
+        <div id="moved">
+        </div>
+        <p id="when">2015.5.23</p>
+        <p id="what">coming<br/>
+            soon</p>
+        </div>
 	</body>
 </html>
