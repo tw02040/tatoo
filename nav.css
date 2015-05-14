@@ -35,9 +35,23 @@
 		    }
 #nav_icon{
 	position: fixed;
-	top: 10px;
-	right: 10px;
-	margin: 1em;
-	width: 3em;
-	height: 3em;
+	top: 1px;
+	right: 1px;
+	margin: 0.8em;
+	width: 2.5em;
+	height: 2.5em;
 }
+#back {
+	position: fixed;
+	top: 1px;
+	left: 0px;
+	margin: 0.2em;
+	width: 4.5em;
+	height: 4.5em;
+}
+#page_name {
+				margin: 0px auto;
+				text-align: center;
+				font-size: 1.2em;
+				font-family: 'Lobster', cursive;
+			}

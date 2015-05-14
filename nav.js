@@ -1,0 +1,9 @@
+﻿$(document).ready(function(){
+	$('#nav_icon').click(function(){ 
+		$("nav").slideToggle("slow");
+	});
+	$('#back').click(function(){ 
+		event.preventDefault();
+   		history.back(1);
+	});
+});
