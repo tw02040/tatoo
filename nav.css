@@ -5,6 +5,7 @@
 	font: 4vmin; Arial;
 	padding: 1px;
 	display: none;
+	z-index: 2;
 }
 	nav h1 {
 		margin: 40px 0 10px 40px;
@@ -40,6 +41,7 @@
 	margin: 0.8em;
 	width: 2.5em;
 	height: 2.5em;
+	z-index: 3;
 }
 #back {
 	position: fixed;
@@ -48,6 +50,7 @@
 	margin: 0.2em;
 	width: 4.5em;
 	height: 4.5em;
+	z-index: 1;
 }
 #page_name {
 				margin: 0px auto;
